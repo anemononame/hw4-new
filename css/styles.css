@@ -97,15 +97,22 @@ h2 {
     color: #2e2f42;
     padding: 24px 0;
     padding-top: 24px;
-    padding-bottom: 24px;        
+    padding-bottom: 24px;
+    transition-property: background-color;
+}
+.nav-menu-item::after {
+    display: block;
+    content: '';
+    width: auto;
+    height: 4px;
+    position: relative;
+    top: 20px;
+   background-color: #FFF;
+
 }
 .nav-menu-item:hover::after {
-    display: inline;
-    width: 50px;
-    height: 20px;
-    content: '';
-    color: #404BBF;
-
+    background-color: #404BBF;
+    
 }
 .nav-menu-item:hover, .nav-menu-item:focus {
     color: #404bbf;
@@ -175,7 +182,7 @@ h2 {
 }
 /*benefits*/
 .benefits-icon {
-translate: 100px 24px;
+    translate: 100px 24px;
 }
 .benefits-card {
     width: 264px;
@@ -228,6 +235,13 @@ align-content: center;
         
 
 /* Our team */
+.team-media-menu {
+    width: 40px;
+    height: 40px;
+}
+.team-icon-media {
+    fill: #404BBF;
+}
 .team-p {
     text-align: center;
 }
