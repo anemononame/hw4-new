@@ -155,6 +155,7 @@ h2 {
     padding: 188px 0 188px 0;
     max-width: 1440px;
     background-size: cover;
+    margin: 0 auto;
 }
 .order-title {
     display: block;
